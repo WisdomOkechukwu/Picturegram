@@ -1,57 +1,3 @@
-
-## API Reference
-
-#### Login
-
-```http
-  POST /api/login
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `email` | `email` | **Required**.|
-| `password` | `String` | **Required**.|
-| `api_key` | `String` | **Required**. Your API key |
-
-#### Register
-
-```http
-  POST /api/login
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `name` | `String` | **Required**.|
-| `image` | `String` | |
-| `email` | `email` | **Required**.|
-| `password` | `String` | **Required**.|
-| `api_key` | `String` | **Required**. Your API key |
-
-
-#### User Details
-
-```http
-  GET /api/user
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
-
-#### User Update
-
-```http
-  PUT /api/user
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `name` | `string` | **Required**. |
-| `image` | `string` |.|
-| `api_key` | `string` | **Required**. Your API key |
-
-
-
 ## Base SetUp
 
 Open a base Flutter project after flutter and dart installation
@@ -127,5 +73,61 @@ Get the IPv4 Address and run this
   php artisan serve --host IPv4 Address --port 8000
   
 ```
+
+
+
+
+## API Reference
+
+#### Login
+
+```http
+  POST /api/login
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `email` | `email` | **Required**.|
+| `password` | `String` | **Required**.|
+| `api_key` | `String` | **Required**. Your API key |
+
+#### Register
+
+```http
+  POST /api/login
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `name` | `String` | **Required**.|
+| `image` | `String` | |
+| `email` | `email` | **Required**.|
+| `password` | `String` | **Required**.|
+| `api_key` | `String` | **Required**. Your API key |
+
+
+#### User Details
+
+```http
+  GET /api/user
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
+
+#### User Update
+
+```http
+  PUT /api/user
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `name` | `string` | **Required**. |
+| `image` | `string` |.|
+| `api_key` | `string` | **Required**. Your API key |
+
+
 
   
