@@ -36,20 +36,30 @@ pathtofile => --flutterappname\android\app\build.gradle
   minSdkVersion 21
 ```
 
-You can now add the github files to the lib path of your Project
-
-```bash
-  Laravel Api for the app link below 
-        git clone https://git@github.com:WisdomOkechukwu/FlutterAPI.git
-```
 
   
 ## Run Locally
 
-Clone the project
+Clone the  project
 
 ```bash
   git clone https://git@github.com:WisdomOkechukwu/Picturegram.git
+```
+
+
+Install composer
+
+```bash
+     php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+    php -r "if (hash_file('sha384', 'composer-setup.php') === '906a84df04cea2aa72f40b5f787e49f22d4c2f19492ac310e8cba5b96ac8b64115ac402c8cd292b8a03482574915d1a8') { echo                                                                                 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+    php composer-setup.php
+    php -r "unlink('composer-setup.php');"
+```
+Clone the Laravel Api and run migrations
+
+```bash
+     git clone https://git@github.com:WisdomOkechukwu/FlutterAPI.git
+     migrations => php artisan migrate
 ```
 
 Go to the project directory
