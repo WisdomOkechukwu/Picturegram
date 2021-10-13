@@ -1,0 +1,87 @@
+button styles
+child: TextButton(
+          child: Text('Text Button'),
+          onPressed: () => print("CLicked here"),
+          onLongPress: () => print("Longer Press"),
+          style: TextButton.styleFrom(
+            primary: Colors.red[100],
+            backgroundColor: Colors.amber,
+          ),
+        ),
+
+ ElevatedButton(
+          child: Text("Elevated button"),
+          onPressed: () => print('Elevated button'),
+          style: ElevatedButton.styleFrom(
+            primary: Colors.amberAccent,
+            onPrimary: Colors.deepPurple[700],
+          ),
+        ),
+
+OutlinedButton(
+          child: Text("Welcome"),
+          onPressed: () => print("Just Pressed"),
+          style: OutlinedButton.styleFrom(
+            primary: Colors.deepOrange,
+            side: BorderSide(
+              color: Colors.blueAccent,
+            ),
+          ),
+        ),
+
+Icons
+child: TextButton.icon(
+          onPressed: () => print("Welcome Icon"),
+          style: TextButton.styleFrom(
+            primary: Colors.green[800],
+          ),
+          icon: Icon(Icons.public_sharp),
+          label: Text('Icon Button'),
+        ),
+
+child: ElevatedButton.icon(
+          onPressed: () => print("Welcome Icon"),
+          style: ElevatedButton.styleFrom(
+            primary: Colors.green[800],
+            onPrimary: Colors.red[700],
+          ),
+          icon: Icon(Icons.public_sharp),
+          label: Text('Icon Button'),
+        ),
+
+
+
+        Icon button
+        IconButton(
+          onPressed: () => print("Error"),
+          icon: Icon(Icons.mail),
+          color: Colors.t
+
+
+Widget buildTextHeader($value, $fontweight, $letterspace) => Text(
+      $value = toString($value),
+      style: TextStyle(
+        color: Colors.grey,
+        letterSpacing: $letterspace,
+        fontFamily: "Poppins",
+      ),
+    );
+@override
+String toString(String value) => value.toUpperCase();
+
+Widget MappesSize(double height, double width) => SizedBox(
+      height: height,
+      width: width,
+    );
+
+
+    
+
+  // switch (response.statusCode) {
+  //   case 200:
+  //     apiResponse.error = response.statusCode.toString();
+  //     break;
+  //   default:
+  //     apiResponse.error = somethingWentWrong;
+  //     break;
+  // }
