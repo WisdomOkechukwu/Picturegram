@@ -1,43 +1,5 @@
 
 ## Base SetUp
-
-Open a base Flutter project after flutter and dart installation
-```bash
-  Flutter create --appname
-```
-install dependencies in the pubspec.yaml file
-
-```bash
- flutter pub get
-```
-
-Add this to the new flutter project Andriod manifest
-
-```bash
--- flutterappname\android\app\src\main\AndroidManifest.xml
-```
-
-```bash
-put this under  package="com.example.--flutterappname">
-<uses-permission android:name="android.permission.INTERNET" /> 
-```
-
-```bash
-put this under
-<application>
-
-        android:usesCleartextTraffic="true"
-        android:requestLegacyExternalStorage="true">
-```
-
-Set the miniSDK to 21
-
-```bash
-pathtofile => --flutterappname\android\app\build.gradle
-  minSdkVersion 21
-```
-
-
   
 ## Run Locally
 
