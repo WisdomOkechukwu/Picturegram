@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-const baseURl = 'https://flutterapix.herokuapp.com/api';
-// const baseURl = 'http://192.168.87.111:8000/api';
+// const baseURl = 'https://flutterapix.herokuapp.com/api';
+const baseURl = 'http://192.168.50.228:8000/api';
 const loginURL = baseURl + '/login';
 const registerURL = baseURl + '/register';
 const logoutURL = baseURl + '/logout';
